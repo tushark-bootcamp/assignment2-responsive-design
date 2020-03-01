@@ -1,0 +1,25 @@
+footer p {
+    font-size: 15px;
+}
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #333;
+    background: darkcyan;
+    height: 50px;
+  }
+
+  .section-footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 2px;
+    text-align: center;
+    color: #333;
+    background: #ccc;
+    height: 50px;
+  }
+
+/*#nav-items-right {
+    float: right;
+  }*/
