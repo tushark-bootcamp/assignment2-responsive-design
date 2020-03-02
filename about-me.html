@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -11,46 +11,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="main-style.css" />
-    <title>My Portfolio</title>
   </head>
   <body>
-    <header>
-      <h1></h1>
-    </header>
-    <div class="container" id="nav-container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!--The button to hold menu options in collapsed position -- for future use may-be
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"> 
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <!--Using Flex alignment - auto margin (mr-auto class) to push the 3 menu items to right-->
-          <a
-            class="navbar-brand p-3 mr-auto"
-            href="#"
-            style="background-color: darkcyan; color: white;"
-            >Your Name<span class="sr-only">(current)</span></a
-          >
-          <ul class="navbar-nav mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="about-me.html">About </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <main class="main-container">
-      <!--<article id="about-me">
-        <a href="about-me.html"></a>
-      </article>-->
-      <div class="container" id="about-me">
+    <main>
+      <div class="container">
         <div class="row">
           <div class="col-md-12"><h1>About Me</h1></div>
         </div>
@@ -58,13 +22,8 @@
         <div class="row">
           <div class="col-md-12 wrapper">
             <section class="image-left">
-              <!--<img id="bio-image" src="https://placehold.it/200x200" alt="Your Name">-->
-              <img
-                id="bio-image"
-                src="images/portfolio_350_350.jpg"
-                alt="Your Name"
-                class="img-thumbnail"
-              />
+                <!--<img id="bio-image" src="https://placehold.it/200x200" alt="Your Name">-->
+                <img id="bio-image" src="images/portfolio_350_350.jpg" alt="Your Name">
             </section>
             <section class="float-right">
               <p>
@@ -95,12 +54,5 @@
         </div>
       </div>
     </main>
-    <footer>
-      <section class="section-footer">
-        <p>
-          &copy; Copyright.
-        </p>
-      </section>
-    </footer>
   </body>
 </html>

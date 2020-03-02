@@ -1,25 +1,86 @@
+.image-left {
+  float: left;
+  width: 35%;
+}
+
+.float-right {
+  float: right;
+  width: 65%;
+}
+
+.wrapper {
+  /* Box-model */
+  width: 980px;
+  float: left;
+}
+
+/* Large rounded gray border */
+hr.bold-gray {
+  border: 2px solid darkgray;
+  border-radius: 5px;
+}
+
+#nav-container {
+  /* This enables alignment of the nav-bar with main-container*/
+    margin-left: 35px;
+  /* For som reason the margin reduction result in margin reduction 
+  margin-right: 10px;*/
+}
+
+.main-container {
+  background-color: white;
+  margin: 30px 320px 170px 60px;
+}
+
+body {
+  background-color: rgba(211, 211, 211, 0.377);
+}
+
+/* Not used
+.dynamic-container {
+  all: revert;
+  background-color: white;
+  padding: 30px 100px 100px 30px;
+  margin: 30px 100px 100px 30px;
+}*/
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+  /* The wrapper's width will be 600px */
+  .image-left {
+    float: none;
+    width: 100%;
+  }
+
+  .float-right {
+    float: none;
+    width: 100%;
+  }
+  .wrapper {
+    width: 640px;
+  }
+}
+
 footer p {
-    font-size: 15px;
+  font-size: 15px;
 }
 footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    color: #333;
-    background: darkcyan;
-    height: 50px;
-  }
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #333;
+  background: rgba(0, 97, 97, 0.932);
+  height: 50px;
+}
 
-  .section-footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 2px;
-    text-align: center;
-    color: #333;
-    background: #ccc;
-    height: 50px;
-  }
-
-/*#nav-items-right {
-    float: right;
-  }*/
+.section-footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 2px;
+  text-align: center;
+  color: white;
+  background: rgb(66, 63, 63);
+  height: 50px;
+}
