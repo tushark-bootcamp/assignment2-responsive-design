@@ -14,58 +14,44 @@
   float: left;
 }
 
-/* Large rounded gray border */
+
+/* Large rounded gray border - separator */
 hr.bold-gray {
   border: 2px solid darkgray;
   border-radius: 5px;
 }
 
 #nav-container {
+  /*width: 100%;*/
   /* This enables alignment of the nav-bar with main-container*/
-    margin-left: 35px;
-  /* For som reason the margin reduction result in margin reduction 
+  margin-left: 35px;
+  background-color: #f8f9fa;
+  /* For som reason the margin reduction does not result in nav-bar occupying full breadth 
   margin-right: 10px;*/
 }
 
+/*Match the color of navbar with the rest of container which is white*/
+.bg-light {
+    background-color: white;
+}
+
+/*The main container that holds our contact, portfolio and about pages 
+should be white as per the specifications set by the UX team*/
 .main-container {
   background-color: white;
-  margin: 30px 320px 170px 60px;
+  margin: 30px 320px 170px 30px;
 }
 
+/*Set the background color of entire page to Gray*/
 body {
   background-color: rgba(211, 211, 211, 0.377);
-}
-
-/* Not used
-.dynamic-container {
-  all: revert;
-  background-color: white;
-  padding: 30px 100px 100px 30px;
-  margin: 30px 100px 100px 30px;
-}*/
-/*
-  These rules take effect when the browser's width
-  is either 768px or less.
-*/
-@media screen and (max-width: 768px) {
-  /* The wrapper's width will be 600px */
-  .image-left {
-    float: none;
-    width: 100%;
-  }
-
-  .float-right {
-    float: none;
-    width: 100%;
-  }
-  .wrapper {
-    width: 640px;
-  }
 }
 
 footer p {
   font-size: 15px;
 }
+
+/*The footer*/
 footer {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -84,3 +70,41 @@ footer {
   background: rgb(66, 63, 63);
   height: 50px;
 }
+
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+    /* The wrapper's width will be 600px */
+    .image-left {
+      float: none;
+      width: 100%;
+    }
+  
+    .float-right {
+      float: none;
+      width: 100%;
+    }
+    .wrapper {
+      width: 640px;
+    }
+    .main-container {
+      margin: 0px;
+    }
+
+    #nav-container {
+        /* This enables alignment of the nav-bar with main-container*/
+        margin-left: 0px;
+      }
+  
+  }
+
+/* Not used
+.dynamic-container {
+  all: revert;
+  background-color: white;
+  padding: 30px 100px 100px 30px;
+  margin: 30px 100px 100px 30px;
+}*/
+/*
